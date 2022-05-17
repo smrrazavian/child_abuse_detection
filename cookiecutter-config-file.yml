@@ -1,0 +1,13 @@
+# This file contains values from Cookiecutter
+
+default_context:
+  project_name: "child_abuse_detection"
+  project_description: "child abuse detection based on python and bag of words."
+  organization: "aasaam"
+  license: "MIT"
+  minimal_python_version: 3.8
+  github_name: "smrrazavian"
+  email: "smrrazavian@outlook.com"
+  version: "0.1.0"
+  line_length: "88"
+  create_example_template: "none"
