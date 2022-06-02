@@ -1,12 +1,13 @@
 """stopword module for project."""
-from typing import List
+from typing import Any, List
 
 import os
 from html import unescape
 from pathlib import Path
 
+import pandas as pd
 from bs4 import BeautifulSoup
-from hazm import stopwords_list
+from hazm import SentenceTokenizer, stopwords_list
 
 
 def csvParser(filename: str) -> List[str]:
@@ -25,9 +26,9 @@ def csvParser(filename: str) -> List[str]:
         for text in group.stripped_strings:
             unescapedText = unescape(text)
             nonUnicodeText = unescapedText.replace("\u200c", " ")
-            nonUnicodeText = nonUnicodeText.replace("\xa0", "")
+            nonUnicodeText = nonUnicodeText.replace("\xa0", " ")
             nonUnicodeText = nonUnicodeText.replace("\u200e", "")
-            texts.append(unescapedText)
+            texts.append(nonUnicodeText)
     return texts
 
 
@@ -40,8 +41,19 @@ def textCleaner(texts: List[str]) -> List[str]:
     """
     withoutStopWords = []
     for text in texts:
-        text = text.lower()
+        text = "".join(filter(lambda x: not x.isdigit(), text))
+        puncts = "!\"#%'()*+,-./:;<=>?@\\[\\]^_`{|}~’”“′‘\\\\]؟؛«»،٪"
+        text = text.translate(str.maketrans("", "", puncts))
         stopWords = set(stopwords_list())
-        text = "".join([word for word in text.split() if word not in stopWords])
+        text = " ".join([word for word in text.split() if word not in stopWords])
         withoutStopWords.append(text)
     return withoutStopWords
+
+
+def textTokenizer(texts: List[str]) -> Any:
+    tokenizer = SentenceTokenizer()
+    tokenizedTexts = []
+    for text in texts:
+        tokenizedText = tokenizer.tokenize(text)
+        tokenizedTexts.append(tokenizedText)
+    return tokenizedTexts
