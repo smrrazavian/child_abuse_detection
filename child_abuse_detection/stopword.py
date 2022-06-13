@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pandas as pd
 from bs4 import BeautifulSoup
-from hazm import SentenceTokenizer, stopwords_list
+from hazm import SentenceTokenizer, WordTokenizer, stopwords_list
 
 
 def csvParser(filename: str) -> List[str]:
@@ -50,8 +50,15 @@ def textCleaner(texts: List[str]) -> List[str]:
     return withoutStopWords
 
 
-def textTokenizer(texts: List[str]) -> Any:
-    tokenizer = SentenceTokenizer()
+def textTokenizer(texts: List[str], tokenizeType: str = "word") -> Any:
+    """
+    Args:
+
+    Returns:
+
+    """
+    typeDict = {"word": WordTokenizer(), "sentence": SentenceTokenizer()}
+    tokenizer = typeDict[tokenizeType]
     tokenizedTexts = []
     for text in texts:
         tokenizedText = tokenizer.tokenize(text)
