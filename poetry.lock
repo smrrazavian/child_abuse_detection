@@ -364,7 +364,7 @@ python-versions = ">=3.6,<4.0"
 
 [[package]]
 name = "databricks-cli"
-version = "0.16.7"
+version = "0.16.8"
 description = "A command line interface for Databricks"
 category = "main"
 optional = false
@@ -3073,8 +3073,8 @@ darglint = [
     {file = "darglint-1.8.1.tar.gz", hash = "sha256:080d5106df149b199822e7ee7deb9c012b49891538f14a11be681044f0bb20da"},
 ]
 databricks-cli = [
-    {file = "databricks-cli-0.16.7.tar.gz", hash = "sha256:c18ca530d865c3a4e966dc76625d2d1316e886b6ae61ef3aa89561c797efef62"},
-    {file = "databricks_cli-0.16.7-py2-none-any.whl", hash = "sha256:d450f69e745a9cb8fdd0c70f85f5599d940e166d4194515aa7499d561a360964"},
+    {file = "databricks-cli-0.16.8.tar.gz", hash = "sha256:b40138f8ec74f36e4a5103bc37cb87edb6f74dc97b9603206f76f68bdd76d37e"},
+    {file = "databricks_cli-0.16.8-py2-none-any.whl", hash = "sha256:880856978bfc67487bbff066ab441a549a4a963a5857c32ab61037fcb50bc15f"},
 ]
 debugpy = [
     {file = "debugpy-1.6.0-cp310-cp310-macosx_10_15_x86_64.whl", hash = "sha256:eb1946efac0c0c3d411cea0b5ac772fbde744109fd9520fb0c5a51979faf05ad"},
