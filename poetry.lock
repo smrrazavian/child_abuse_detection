@@ -943,7 +943,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "jupyterlab-widgets"
-version = "1.1.0"
+version = "1.1.1"
 description = "A JupyterLab extension."
 category = "main"
 optional = false
@@ -3338,8 +3338,8 @@ jupyterlab-pygments = [
     {file = "jupyterlab_pygments-0.2.2.tar.gz", hash = "sha256:7405d7fde60819d905a9fa8ce89e4cd830e318cdad22a0030f7a901da705585d"},
 ]
 jupyterlab-widgets = [
-    {file = "jupyterlab_widgets-1.1.0-py3-none-any.whl", hash = "sha256:c2a9bd3789f120f64d73268c066ed3b000c56bc1dda217be5cdc43e7b4ebad3f"},
-    {file = "jupyterlab_widgets-1.1.0.tar.gz", hash = "sha256:d5f41bc1713795385f718d44dcba47e1e1473c6289f28a95aa6b2c0782ee372a"},
+    {file = "jupyterlab_widgets-1.1.1-py3-none-any.whl", hash = "sha256:90ab47d99da03a3697074acb23b2975ead1d6171aa41cb2812041a7f2a08177a"},
+    {file = "jupyterlab_widgets-1.1.1.tar.gz", hash = "sha256:67d0ef1e407e0c42c8ab60b9d901cd7a4c68923650763f75bf17fb06c1943b79"},
 ]
 kiwisolver = [
     {file = "kiwisolver-1.4.2-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:6e395ece147f0692ca7cdb05a028d31b83b72c369f7b4a2c1798f4b96af1e3d8"},
