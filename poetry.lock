@@ -1873,7 +1873,7 @@ scipy = ">=1.0"
 
 [[package]]
 name = "pyod"
-version = "1.0.1"
+version = "1.0.2"
 description = "A Comprehensive and Scalable Python Library for Outlier Detection (Anomaly Detection)"
 category = "main"
 optional = false
@@ -4025,7 +4025,7 @@ pynndescent = [
     {file = "pynndescent-0.5.7.tar.gz", hash = "sha256:ecb395255fa36a748b5870b4ba0300ea0f7da8b1964864b8edd62577a84dfd7d"},
 ]
 pyod = [
-    {file = "pyod-1.0.1.tar.gz", hash = "sha256:c1659f7f55eba5bafd25cb28b469084fd5394e241af7eecf655c704cae36f0c7"},
+    {file = "pyod-1.0.2.tar.gz", hash = "sha256:07fda9216aeaab94f0a24894f3a8c88f6911c87791e8c2b46634c452ebe6a819"},
 ]
 pyparsing = [
     {file = "pyparsing-3.0.9-py3-none-any.whl", hash = "sha256:5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc"},
