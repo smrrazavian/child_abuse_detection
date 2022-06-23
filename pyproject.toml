@@ -32,7 +32,7 @@ classifiers = [  #! Update me
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pandas = "^1.4.2"
+pandas = "^1.4.3"
 hazm = "^0.7.0"
 beautifulsoup4 = "^4.11.1"
 pycaret = "^2.3.10"
