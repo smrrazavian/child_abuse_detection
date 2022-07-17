@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 from hazm import SentenceTokenizer, WordTokenizer, stopwords_list
 
 
-def csvParser(filename: str) -> List[str]:
+def ParsCSV(filename: str) -> pd.DataFrame:
     """Parsing csv files for project.
     Args:
 
@@ -19,25 +19,32 @@ def csvParser(filename: str) -> List[str]:
     """
     cwd = Path.cwd()
     filePath = os.path.join((cwd / "./assets/").resolve(), filename + ".csv")
-    with open(filePath) as file:
-        soup = BeautifulSoup(file, features="html.parser", from_encoding="utf-8")
-    texts = []
-    for group in soup(["h1", "h2", "h3", "h4", "h5", "h6", "p"]):
-        for text in group.stripped_strings:
-            unescapedText = unescape(text)
-            nonUnicodeText = unescapedText.replace("\u200c", " ")
-            nonUnicodeText = nonUnicodeText.replace("\xa0", " ")
-            nonUnicodeText = nonUnicodeText.replace("\u200e", "")
-            texts.append(nonUnicodeText)
-    return texts
+    # --------Making data-frame from csv file--------
+    df_data = pd.read_csv(filePath)
+    df_data = df_data.dropna(how="any", axis=0)
+    df_data.drop("id", axis=1, inplace=True)
+    df_data.reset_index(inplace=True, drop=True)
+    for i in range(0, len(df_data)):
+        soup = BeautifulSoup(df_data["content"][i], features="html.parser")
+        # tags = ["h1", "h2", "h3", "h4", "h5", "h6", "p", "xcms", "xcms:video"]
+        text = soup.get_text()
+        unescapedText = unescape(text)
+        nonUnicodeText = unescapedText.replace("\u200c", " ")
+        nonUnicodeText = nonUnicodeText.replace("\xa0", " ")
+        nonUnicodeText = nonUnicodeText.replace("\u200e", "")
+        df_data["content"][i] = nonUnicodeText
+    return df_data
 
 
 def textCleaner(texts: List[str]) -> List[str]:
+    # TODO Union type checking
     """
     Args:
-        texts: a list of newses.
+        texts (List[str]):
+            a list of newses.
     Returns:
-        withoutStopWords: a list of newses without StopWords.
+        withoutStopWords (List[str]):
+            a list of newses without StopWords.
     """
     withoutStopWords = []
     for text in texts:
@@ -53,7 +60,10 @@ def textCleaner(texts: List[str]) -> List[str]:
 def textTokenizer(texts: List[str], tokenizeType: str = "word") -> Any:
     """
     Args:
-
+        texts (List[str]):
+            a List of sentences of the corpus.
+        tokenizeType (str):
+            Determines the tokenization type.
     Returns:
 
     """
