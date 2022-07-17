@@ -1,0 +1,30 @@
+************* Module child_abuse_detection
+child_abuse_detection/__init__.py:8:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module child_abuse_detection.stopword
+child_abuse_detection/stopword.py:40:5: W0511: TODO Union type checking (fixme)
+child_abuse_detection/stopword.py:13:0: C0103: Function name "ParsCSV" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/stopword.py:21:4: C0103: Variable name "filePath" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/stopword.py:31:8: C0103: Variable name "unescapedText" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/stopword.py:32:8: C0103: Variable name "nonUnicodeText" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/stopword.py:33:8: C0103: Variable name "nonUnicodeText" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/stopword.py:34:8: C0103: Variable name "nonUnicodeText" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/stopword.py:39:0: C0103: Function name "textCleaner" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/stopword.py:49:4: C0103: Variable name "withoutStopWords" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/stopword.py:54:8: C0103: Variable name "stopWords" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/stopword.py:60:0: C0103: Function name "textTokenizer" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/stopword.py:60:36: C0103: Argument name "tokenizeType" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/stopword.py:70:4: C0103: Variable name "typeDict" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/stopword.py:72:4: C0103: Variable name "tokenizedTexts" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/stopword.py:74:8: C0103: Variable name "tokenizedText" doesn't conform to snake_case naming style (invalid-name)
+************* Module child_abuse_detection.Vectorization
+child_abuse_detection/Vectorization.py:10:1: W0511: TODO: (fixme)
+child_abuse_detection/Vectorization.py:1:0: C0103: Module name "Vectorization" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/Vectorization.py:21:4: C0103: Variable name "w2vModel" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/Vectorization.py:29:0: C0103: Function name "countVectorizer" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/Vectorization.py:37:4: C0103: Variable name "textVector" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/Vectorization.py:41:0: C0103: Function name "tfidfVectorizer" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/Vectorization.py:49:4: C0103: Variable name "textVector" doesn't conform to snake_case naming style (invalid-name)
+child_abuse_detection/Vectorization.py:8:0: W0611: Unused stopword imported from child_abuse_detection (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 6.42/10 (previous run: 6.42/10, +0.00)

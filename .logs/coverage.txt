@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
+rootdir: /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection, configfile: pyproject.toml
+plugins: cov-3.0.0, metadata-2.0.2, html-3.1.1
+collected 0 items
+
+
+---------- coverage: platform linux, python 3.8.10-final-0 -----------
+Name                                          Stmts   Miss  Cover
+-----------------------------------------------------------------
+child_abuse_detection/Vectorization.py           18     18     0%
+child_abuse_detection/__init__.py                 7      7     0%
+child_abuse_detection/stopword.py                41     41     0%
+child_abuse_detection/text_classfication.py       0      0   100%
+-----------------------------------------------------------------
+TOTAL                                            66     66     0%
+
+============================ no tests ran in 0.14s =============================

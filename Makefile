@@ -1,7 +1,6 @@
 #* Variables
 SHELL := /usr/bin/env bash
 PYTHON := python
-PYTHONPATH := `pwd`
 
 #* Docker variables
 IMAGE := child_abuse_detection
@@ -31,8 +30,8 @@ pre-commit-install:
 .PHONY: codestyle
 codestyle:
 	poetry run pyupgrade --exit-zero-even-if-changed --py38-plus **/*.py
-	poetry run isort --settings-path pyproject.toml ./
-	poetry run black --config pyproject.toml ./
+	poetry run isort child_abuse_detection/*.py --settings-path pyproject.toml ./
+	poetry run black child_abuse_detection/*.py --config pyproject.toml ./
 
 .PHONY: formatting
 formatting: codestyle
@@ -40,13 +39,17 @@ formatting: codestyle
 #* Linting
 .PHONY: test
 test:
-	PYTHONPATH=$(PYTHONPATH) poetry run pytest -c pyproject.toml --cov-report=html --cov=child_abuse_detection tests/
-	poetry run coverage-badge -o assets/images/coverage.svg -f
+	poetry run pytest -c pyproject.toml
+
+.PHONY: coverage
+coverage:
+	poetry run pytest --cov-report html --cov child_abuse_detection tests/
+	coverage-badge --o assets/images/coverage.svg -f
 
 .PHONY: check-codestyle
 check-codestyle:
-	poetry run isort --diff --check-only --settings-path pyproject.toml ./
-	poetry run black --diff --check --config pyproject.toml ./
+	poetry run isort --diff --check-only --settings-path pyproject.toml child_abuse_detection/*.py tests/*.py
+	poetry run black --diff --check --config pyproject.toml child_abuse_detection/*.py tests/*.py
 	poetry run darglint --verbosity 2 child_abuse_detection tests
 
 .PHONY: mypy
@@ -61,6 +64,11 @@ check-safety:
 
 .PHONY: lint
 lint: test check-codestyle mypy check-safety
+
+.PHONY: extrabadges
+extrabadges:
+	$(SHELL) -c 'chmod u+x+r+w .shell/*.sh'
+	$(SHELL) -c 'chmod u+x+r+w .shell/badges.sh; . .shell/badges.sh'
 
 .PHONY: update-dev-deps
 update-dev-deps:

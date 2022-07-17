@@ -1,0 +1,11 @@
+= Coverage for /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection/child_abuse_detection/ =
+----------------------------------- Summary ------------------------------------
+| Name                         |     Total |     Miss |     Cover |     Cover% |
+|------------------------------|-----------|----------|-----------|------------|
+| Vectorization.py             |         4 |        0 |         4 |       100% |
+| __init__.py                  |         2 |        1 |         1 |        50% |
+| stopword.py                  |         4 |        0 |         4 |       100% |
+| text_classfication.py        |         1 |        0 |         1 |       100% |
+|------------------------------|-----------|----------|-----------|------------|
+| TOTAL                        |        11 |        1 |        10 |      90.9% |
+---------------- RESULT: PASSED (minimum: 80.0%, actual: 90.9%) ----------------
