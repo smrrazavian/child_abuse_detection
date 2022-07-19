@@ -1,7 +1,6 @@
 # child_abuse_detection
 
 <div align="center">
-
   [![Build status](https://github.com/smrrazavian/child_abuse_detection/workflows/build/badge.svg)](https://github.com/smrrazavian/child_abuse_detection/actions?query=workflow%3Abuild)
   [![Python Version](https://img.shields.io/pypi/pyversions/child_abuse_detection.svg)](https://pypi.org/project/child_abuse_detection/)
   [![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](https://github.com/smrrazavian/child_abuse_detection/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Aapp%2Fdependabot)
@@ -14,7 +13,6 @@
   ![Coverage Report](assets/images/coverage.svg)
 
   child abuse detection based on python and bag of words.
-
 </div>
 
 ## Very first steps
@@ -23,38 +21,38 @@
 
 1. Initialize `git` inside your repo:
 
-```bash
-cd child_abuse_detection && git init
-```
+    ```bash
+    cd child_abuse_detection && git init
+    ```
 
 2. If you don't have `Poetry` installed run:
 
-```bash
-make poetry-download
-```
+    ```bash
+    make poetry-download
+    ```
 
 3. Initialize poetry and install `pre-commit` hooks:
 
-```bash
-make install
-make pre-commit-install
-```
+    ```bash
+    make install
+    make pre-commit-install
+    ```
 
 4. Run the codestyle:
 
-```bash
-make codestyle
-```
+    ```bash
+    make codestyle
+    ```
 
 5. Upload initial code to GitHub:
 
-```bash
-git add .
-git commit -m ":tada: Initial commit"
-git branch -M main
-git remote add origin https://github.com/smrrazavian/child_abuse_detection.git
-git push -u origin main
-```
+    ```bash
+    git add .
+    git commit -m ":tada: Initial commit"
+    git branch -M main
+    git remote add origin https://github.com/smrrazavian/child_abuse_detection.git
+    git push -u origin main
+    ```
 
 ### Set up bots
 

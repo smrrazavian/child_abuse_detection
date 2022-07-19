@@ -1,31 +1,31 @@
-child_abuse_detection/Vectorization.py: note: In function "word2vec":
-child_abuse_detection/Vectorization.py:14: error: Function
+child_abuse_detection/vectorization.py: note: In function "word2vec":
+child_abuse_detection/vectorization.py:12: error: Function
 "numpy.core.multiarray.array" is not valid as a type  [valid-type]
     def word2vec(text: List[str]) -> np.array:
     ^
-child_abuse_detection/Vectorization.py:14: note: Perhaps you need "Callable[...]" or a callback protocol?
-child_abuse_detection/Vectorization.py:26:5: error: Returning Any from function
+child_abuse_detection/vectorization.py:12: note: Perhaps you need "Callable[...]" or a callback protocol?
+child_abuse_detection/vectorization.py:24:5: error: Returning Any from function
 declared to return np.array?  [no-any-return]
-        return w2vModel.load
+        return w2v_model.load
         ^
-child_abuse_detection/Vectorization.py: note: In function "countVectorizer":
-child_abuse_detection/Vectorization.py:29: error: Function
+child_abuse_detection/vectorization.py: note: In function "count_vectorizer":
+child_abuse_detection/vectorization.py:27: error: Function
 "numpy.core.multiarray.array" is not valid as a type  [valid-type]
-    def countVectorizer(text: List[str]) -> np.array:
+    def count_vectorizer(text: List[str]) -> np.array:
     ^
-child_abuse_detection/Vectorization.py:29: note: Perhaps you need "Callable[...]" or a callback protocol?
-child_abuse_detection/Vectorization.py:38:5: error: Returning Any from function
+child_abuse_detection/vectorization.py:27: note: Perhaps you need "Callable[...]" or a callback protocol?
+child_abuse_detection/vectorization.py:36:5: error: Returning Any from function
 declared to return np.array?  [no-any-return]
-        return textVector
+        return text_vector
         ^
-child_abuse_detection/Vectorization.py: note: In function "tfidfVectorizer":
-child_abuse_detection/Vectorization.py:41: error: Function
+child_abuse_detection/vectorization.py: note: In function "tfidf_vectorizer":
+child_abuse_detection/vectorization.py:39: error: Function
 "numpy.core.multiarray.array" is not valid as a type  [valid-type]
-    def tfidfVectorizer(text: List[str]) -> np.array:
+    def tfidf_vectorizer(text: List[str]) -> np.array:
     ^
-child_abuse_detection/Vectorization.py:41: note: Perhaps you need "Callable[...]" or a callback protocol?
-child_abuse_detection/Vectorization.py:50:5: error: Returning Any from function
+child_abuse_detection/vectorization.py:39: note: Perhaps you need "Callable[...]" or a callback protocol?
+child_abuse_detection/vectorization.py:48:5: error: Returning Any from function
 declared to return np.array?  [no-any-return]
-        return textVector
+        return text_vector
         ^
-Found 6 errors in 1 file (checked 5 source files)
+Found 6 errors in 1 file (checked 7 source files)

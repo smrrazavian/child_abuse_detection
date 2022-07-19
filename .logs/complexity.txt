@@ -1,13 +1,13 @@
-child_abuse_detection/stopword.py
-    F 39:0 textCleaner - A (4)
-    F 13:0 ParsCSV - A (2)
-    F 60:0 textTokenizer - A (2)
-child_abuse_detection/Vectorization.py
-    F 14:0 word2vec - A (1)
-    F 29:0 countVectorizer - A (1)
-    F 41:0 tfidfVectorizer - A (1)
+child_abuse_detection/vectorization.py
+    F 12:0 word2vec - A (1)
+    F 27:0 count_vectorizer - A (1)
+    F 39:0 tfidf_vectorizer - A (1)
+child_abuse_detection/text_utils.py
+    F 40:0 clean_text - A (4)
+    F 13:0 pars_csv - A (2)
+    F 61:0 tokenize_text - A (2)
 child_abuse_detection/__init__.py
-    F 8:0 get_version - A (2)
+    F 7:0 get_version - A (2)
 
 7 blocks (classes, functions, methods) analyzed.
 Average complexity: A (1.8571428571428572)

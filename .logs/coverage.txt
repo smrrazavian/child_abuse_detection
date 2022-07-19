@@ -6,13 +6,13 @@ collected 0 items
 
 
 ---------- coverage: platform linux, python 3.8.10-final-0 -----------
-Name                                          Stmts   Miss  Cover
------------------------------------------------------------------
-child_abuse_detection/Vectorization.py           18     18     0%
-child_abuse_detection/__init__.py                 7      7     0%
-child_abuse_detection/stopword.py                41     41     0%
-child_abuse_detection/text_classfication.py       0      0   100%
------------------------------------------------------------------
-TOTAL                                            66     66     0%
+Name                                           Stmts   Miss  Cover
+------------------------------------------------------------------
+child_abuse_detection/__init__.py                  6      6     0%
+child_abuse_detection/text_classification.py       0      0   100%
+child_abuse_detection/text_utils.py               41     41     0%
+child_abuse_detection/vectorization.py            17     17     0%
+------------------------------------------------------------------
+TOTAL                                             64     64     0%
 
 ============================ no tests ran in 0.07s =============================
