@@ -5,28 +5,26 @@ import numpy as np
 from gensim.models import Word2Vec
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 
-from child_abuse_detection import stopword
-
 # TODO:
 #  Config countVectorizer & tfidfVectorizer. Complete word2vec.
 
 
 def word2vec(text: List[str]) -> np.array:
-    """
+    """Creates word2vec vector.
     Args:
         text (List[str]):
     Returns:
 
     """
-    w2vModel = Word2Vec(sentences=text, alpha=0.05, min_alpha=0.0007)
-    w2vModel.save("word2vec.model")
-    w2vModel.train(
-        text, total_examples=w2vModel.corpus_count, epochs=30, report_delay=1
+    w2v_model = Word2Vec(sentences=text, alpha=0.05, min_alpha=0.0007)
+    w2v_model.save("word2vec.model")
+    w2v_model.train(
+        text, total_examples=w2v_model.corpus_count, epochs=30, report_delay=1
     )
-    return w2vModel.load
+    return w2v_model.load
 
 
-def countVectorizer(text: List[str]) -> np.array:
+def count_vectorizer(text: List[str]) -> np.array:
     """
     Args:
         text (List[str]):
@@ -34,11 +32,11 @@ def countVectorizer(text: List[str]) -> np.array:
 
     """
     vectorizer = CountVectorizer()
-    textVector = vectorizer.fit_transform(text).toarray()
-    return textVector
+    text_vector = vectorizer.fit_transform(text).toarray()
+    return text_vector
 
 
-def tfidfVectorizer(text: List[str]) -> np.array:
+def tfidf_vectorizer(text: List[str]) -> np.array:
     """
     Args:
 
@@ -46,5 +44,5 @@ def tfidfVectorizer(text: List[str]) -> np.array:
 
     """
     vectorizer = TfidfVectorizer()
-    textVector = vectorizer.fit_transform(text).toarray()
-    return textVector
+    text_vector = vectorizer.fit_transform(text).toarray()
+    return text_vector

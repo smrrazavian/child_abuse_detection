@@ -10,35 +10,36 @@ from bs4 import BeautifulSoup
 from hazm import SentenceTokenizer, WordTokenizer, stopwords_list
 
 
-def ParsCSV(filename: str) -> pd.DataFrame:
+def pars_csv(filename: str) -> pd.DataFrame:
     """Parsing csv files for project.
     Args:
-
+        filename (str):
+            gets a csv filename in assets directory
     Returns:
-
+        df_data (pd.DataFrame):
+            Pandas data-frame of given csv file
     """
     cwd = Path.cwd()
-    filePath = os.path.join((cwd / "./assets/").resolve(), filename + ".csv")
+    file_path = os.path.join((cwd / "./assets/").resolve(), filename + ".csv")
     # --------Making data-frame from csv file--------
-    df_data = pd.read_csv(filePath)
+    df_data = pd.read_csv(file_path)
     df_data = df_data.dropna(how="any", axis=0)
     df_data.drop("id", axis=1, inplace=True)
     df_data.reset_index(inplace=True, drop=True)
     for i in range(0, len(df_data)):
         soup = BeautifulSoup(df_data["content"][i], features="html.parser")
-        # tags = ["h1", "h2", "h3", "h4", "h5", "h6", "p", "xcms", "xcms:video"]
         text = soup.get_text()
-        unescapedText = unescape(text)
-        nonUnicodeText = unescapedText.replace("\u200c", " ")
-        nonUnicodeText = nonUnicodeText.replace("\xa0", " ")
-        nonUnicodeText = nonUnicodeText.replace("\u200e", "")
-        df_data["content"][i] = nonUnicodeText
+        unescaped_text = unescape(text)
+        non_unicode_text = unescaped_text.replace("\u200c", " ")
+        non_unicode_text = non_unicode_text.replace("\xa0", " ")
+        non_unicode_text = non_unicode_text.replace("\u200e", "")
+        df_data["content"][i] = non_unicode_text
     return df_data
 
 
-def textCleaner(texts: List[str]) -> List[str]:
+def clean_text(texts: List[str]) -> List[str]:
     # TODO Union type checking
-    """
+    """Deletes stopwords, punctuations and digits of text.
     Args:
         texts (List[str]):
             a list of newses.
@@ -46,19 +47,19 @@ def textCleaner(texts: List[str]) -> List[str]:
         withoutStopWords (List[str]):
             a list of newses without StopWords.
     """
-    withoutStopWords = []
+    without_stop_words = []
     for text in texts:
         text = "".join(filter(lambda x: not x.isdigit(), text))
         puncts = "!\"#%'()*+,-./:;<=>?@\\[\\]^_`{|}~’”“′‘\\\\]؟؛«»،٪"
         text = text.translate(str.maketrans("", "", puncts))
-        stopWords = set(stopwords_list())
-        text = " ".join([word for word in text.split() if word not in stopWords])
-        withoutStopWords.append(text)
-    return withoutStopWords
+        stop_words = set(stopwords_list())
+        text = " ".join([word for word in text.split() if word not in stop_words])
+        without_stop_words.append(text)
+    return without_stop_words
 
 
-def textTokenizer(texts: List[str], tokenizeType: str = "word") -> Any:
-    """
+def tokenize_text(texts: List[str], tokenize_type: str = "word") -> Any:
+    """Tokenize text based on tokenize_type(word or sentences).
     Args:
         texts (List[str]):
             a List of sentences of the corpus.
@@ -67,10 +68,10 @@ def textTokenizer(texts: List[str], tokenizeType: str = "word") -> Any:
     Returns:
 
     """
-    typeDict = {"word": WordTokenizer(), "sentence": SentenceTokenizer()}
-    tokenizer = typeDict[tokenizeType]
-    tokenizedTexts = []
+    type_dict = {"word": WordTokenizer(), "sentence": SentenceTokenizer()}
+    tokenizer = type_dict[tokenize_type]
+    tokenized_texts = []
     for text in texts:
-        tokenizedText = tokenizer.tokenize(text)
-        tokenizedTexts.append(tokenizedText)
-    return tokenizedTexts
+        tokenized_text = tokenizer.tokenize(text)
+        tokenized_texts.append(tokenized_text)
+    return tokenized_texts
