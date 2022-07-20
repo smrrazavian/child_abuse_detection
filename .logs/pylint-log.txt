@@ -1,7 +1,7 @@
 ************* Module child_abuse_detection.vectorization
-child_abuse_detection/vectorization.py:8:1: W0511: TODO: (fixme)
+child_abuse_detection/vectorization.py:7:1: W0511: TODO: (fixme)
 ************* Module child_abuse_detection.text_utils
 child_abuse_detection/text_utils.py:58:30: W0511: TODO Ask if is it efficient to create new list? (fixme)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.73/10 (previous run: 9.73/10, +0.00)
+Your code has been rated at 9.71/10 (previous run: 9.71/10, +0.00)

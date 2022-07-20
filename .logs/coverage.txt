@@ -11,8 +11,8 @@ Name                                           Stmts   Miss  Cover
 child_abuse_detection/__init__.py                  6      6     0%
 child_abuse_detection/text_classification.py       0      0   100%
 child_abuse_detection/text_utils.py               49     49     0%
-child_abuse_detection/vectorization.py            17     17     0%
+child_abuse_detection/vectorization.py            13     13     0%
 ------------------------------------------------------------------
-TOTAL                                             72     72     0%
+TOTAL                                             68     68     0%
 
-============================ no tests ran in 0.15s =============================
+============================ no tests ran in 0.07s =============================

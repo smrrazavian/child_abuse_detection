@@ -1,9 +1,7 @@
 """Vectorization module."""
 from typing import Any
 
-import numpy as np
 import pandas as pd
-from gensim.models import Word2Vec
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 
 # TODO:
