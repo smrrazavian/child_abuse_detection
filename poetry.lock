@@ -1441,14 +1441,6 @@ packaging = "*"
 
 [[package]]
 name = "numpy"
-version = "1.19.5"
-description = "NumPy is the fundamental package for array computing with Python."
-category = "main"
-optional = false
-python-versions = ">=3.6"
-
-[[package]]
-name = "numpy"
 version = "1.23.1"
 description = "NumPy is the fundamental package for array computing with Python."
 category = "main"
@@ -1899,24 +1891,6 @@ crypto = ["cryptography (>=3.3.1)"]
 dev = ["sphinx", "sphinx-rtd-theme", "zope.interface", "cryptography (>=3.3.1)", "pytest (>=6.0.0,<7.0.0)", "coverage[toml] (==5.0.4)", "mypy", "pre-commit"]
 docs = ["sphinx", "sphinx-rtd-theme", "zope.interface"]
 tests = ["pytest (>=6.0.0,<7.0.0)", "coverage[toml] (==5.0.4)"]
-
-[[package]]
-name = "pyldavis"
-version = "3.2.2"
-description = "Interactive topic model visualization. Port of the R package."
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-funcy = "*"
-future = "*"
-jinja2 = ">=2.7.2"
-joblib = ">=0.8.4"
-numexpr = "*"
-numpy = ">=1.9.2"
-pandas = {version = ">=0.17.0", markers = "python_version > \"3.5\""}
-scipy = ">=0.18.0"
 
 [[package]]
 name = "pyldavis"
@@ -2859,21 +2833,6 @@ matplotlib = ">=2.0.2,<3.0.0 || >3.0.0"
 numpy = ">=1.13.0"
 scikit-learn = ">=0.20,<0.24"
 scipy = ">=1.0.0,<1.6"
-
-[[package]]
-name = "yellowbrick"
-version = "1.3.post1"
-description = "A suite of visual analysis and diagnostic tools for machine learning."
-category = "main"
-optional = false
-python-versions = ">=3.4, <4"
-
-[package.dependencies]
-cycler = ">=0.10.0"
-matplotlib = ">=2.0.2,<3.0.0 || >3.0.0"
-numpy = ">=1.16.0,<1.20"
-scikit-learn = ">=0.20"
-scipy = ">=1.0.0"
 
 [[package]]
 name = "zipp"

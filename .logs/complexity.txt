@@ -3,9 +3,9 @@ child_abuse_detection/vectorization.py
     F 27:0 count_vectorizer - A (1)
     F 39:0 tfidf_vectorizer - A (1)
 child_abuse_detection/text_utils.py
-    F 40:0 clean_text - A (4)
+    F 49:0 clean_text - A (4)
     F 13:0 pars_csv - A (2)
-    F 61:0 tokenize_text - A (2)
+    F 71:0 tokenize_text - A (2)
 child_abuse_detection/__init__.py
     F 7:0 get_version - A (2)
 

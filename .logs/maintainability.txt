@@ -1,4 +1,4 @@
 child_abuse_detection/vectorization.py - A (100.00)
-child_abuse_detection/text_utils.py - A (80.80)
+child_abuse_detection/text_utils.py - A (77.24)
 child_abuse_detection/text_classification.py - A (100.00)
 child_abuse_detection/__init__.py - A (100.00)
