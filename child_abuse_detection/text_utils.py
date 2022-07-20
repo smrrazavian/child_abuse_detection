@@ -76,7 +76,8 @@ def tokenize_text(texts: List[str], tokenize_type: str = "word") -> Any:
         tokenizeType (str):
             Determines the tokenization type.
     Returns:
-
+        tokenized_texts (Any):
+            tokenized form of sentences.
     """
     type_dict = {"word": WordTokenizer(), "sentence": SentenceTokenizer()}
     tokenizer = type_dict[tokenize_type]
