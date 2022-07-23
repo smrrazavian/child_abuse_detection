@@ -44,7 +44,7 @@ test:
 .PHONY: coverage
 coverage:
 	poetry run pytest --cov-report html --cov child_abuse_detection tests/
-	coverage-badge --o assets/images/coverage.svg -f
+	coverage-badge -o assets/images/coverage.svg -f
 
 .PHONY: check-codestyle
 check-codestyle:
