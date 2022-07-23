@@ -24,7 +24,7 @@ def path_finder(filename: str) -> str:
         file_path = os.path.join((cwd / "./assets/").resolve(), filename + ".csv")
         return file_path
     except:
-        raise Exception("Incorrect file name.")
+        raise ValueError("Incorrect file name.")
 
 
 def pars_csv(filename: str) -> pd.DataFrame:

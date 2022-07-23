@@ -1,7 +1,8 @@
 """Unit tests for stopword module."""
+import pandas as pd
 import pytest
 
-from child_abuse_detection.text_utils import path_finder
+from child_abuse_detection.text_utils import pars_csv, path_finder
 
 
 def test_path_finder():
@@ -18,3 +19,9 @@ def test_path_finder_fail():
     with pytest.raises(Exception) as error:
         path_finder("childabuse")
         assert error.value.args[0] == "Incorrect file name."
+
+
+def test_pars_csv():
+    """Test parsing csv files."""
+    data_frame = pars_csv("SampleNews")
+    assert isinstance(data_frame, pd.DataFrame)
