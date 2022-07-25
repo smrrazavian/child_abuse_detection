@@ -36,7 +36,7 @@ python = "^3.8"
 pandas = "^1.4.2"
 hazm = "^0.7.0"
 beautifulsoup4 = "^4.11.1"
-pycaret = "^2.3.10"
+pycaret = {extras = ["full"], version = "^2.3.10"}
 
 [tool.poetry.dev-dependencies]
 bandit = "^1.7.1"

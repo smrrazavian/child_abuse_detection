@@ -9,6 +9,8 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from hazm import SentenceTokenizer, WordTokenizer, stopwords_list
 
+# TODO: fix inputs of functions.
+
 
 def path_finder(filename: str) -> str:
     """Returns a file path.
