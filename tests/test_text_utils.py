@@ -1,4 +1,7 @@
 """Unit tests for stopword module."""
+import os
+from pathlib import Path
+
 import pandas as pd
 import pytest
 
@@ -8,10 +11,9 @@ from child_abuse_detection.text_utils import pars_csv, path_finder
 def test_path_finder():
     """Test path_finder"""
     path = path_finder("ChildAbuse")
-    assert (
-        path
-        == "/home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection/assets/ChildAbuse.csv"
-    )
+    cwd = Path.cwd()
+    file_path = os.path.join((cwd / "./assets/").resolve(), "ChildAbuse" + ".csv")
+    assert path == file_path
 
 
 def test_path_finder_fail():
