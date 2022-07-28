@@ -1,11 +1,11 @@
-= Coverage for /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection/child_abuse_detection/ =
+=== Coverage for /data/projects/child_abuse_detection/child_abuse_detection/ ===
 ----------------------------------- Summary ------------------------------------
 | Name                         |     Total |     Miss |     Cover |     Cover% |
 |------------------------------|-----------|----------|-----------|------------|
 | __init__.py                  |         2 |        0 |         2 |       100% |
 | text_classification.py       |         1 |        0 |         1 |       100% |
-| text_utils.py                |         5 |        0 |         5 |       100% |
+| text_utils.py                |         4 |        0 |         4 |       100% |
 | vectorization.py             |         3 |        0 |         3 |       100% |
 |------------------------------|-----------|----------|-----------|------------|
-| TOTAL                        |        11 |        0 |        11 |     100.0% |
+| TOTAL                        |        10 |        0 |        10 |     100.0% |
 --------------- RESULT: PASSED (minimum: 80.0%, actual: 100.0%) ----------------

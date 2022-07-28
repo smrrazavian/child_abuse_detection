@@ -1,8 +1,6 @@
-************* Module child_abuse_detection.vectorization
-child_abuse_detection/vectorization.py:7:1: W0511: TODO: (fixme)
 ************* Module child_abuse_detection.text_utils
-child_abuse_detection/text_utils.py:66:30: W0511: TODO Ask if is it efficient to create new list? (fixme)
-child_abuse_detection/text_utils.py:27:8: W0707: Consider explicitly re-raising using 'except Exception as exc' and 'raise ValueError('Incorrect file name.') from exc' (raise-missing-from)
+child_abuse_detection/text_utils.py:14:1: W0511: TODO: fix inputs of functions. (fixme)
+child_abuse_detection/text_utils.py:69:30: W0511: TODO Ask if is it efficient to create new list? (fixme)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.59/10 (previous run: 9.59/10, +0.00)
+Your code has been rated at 9.68/10 (previous run: 9.52/10, +0.16)

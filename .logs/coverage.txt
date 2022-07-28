@@ -1,65 +1,16 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.8.10, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
-rootdir: /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection, configfile: pyproject.toml
-plugins: cov-3.0.0, metadata-2.0.2, html-3.1.1
-collected 2 items
+rootdir: /data/projects/child_abuse_detection, configfile: pyproject.toml
+plugins: cov-3.0.0, anyio-3.6.1, metadata-2.0.2, dash-2.6.0, html-3.1.1
+collected 6 items
 
-tests/test_text_utils.py ..                                              [100%]
+tests/test_text_utils.py ....                                            [ 66%]
+tests/test_vectorization.py ..                                           [100%]
 
 =============================== warnings summary ===============================
 .venv_38/lib/python3.8/site-packages/nltk/decorators.py:69
-  /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection/.venv_38/lib/python3.8/site-packages/nltk/decorators.py:69: DeprecationWarning: `formatargspec` is deprecated since Python 3.5. Use `signature` and the `Signature` object directly
+  /data/projects/child_abuse_detection/.venv_38/lib/python3.8/site-packages/nltk/decorators.py:69: DeprecationWarning: `formatargspec` is deprecated since Python 3.5. Use `signature` and the `Signature` object directly
     signature = inspect.formatargspec(regargs, varargs, varkwargs, defaults,
-
-.venv_38/lib/python3.8/site-packages/sklearn/feature_extraction/image.py:172
-  /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection/.venv_38/lib/python3.8/site-packages/sklearn/feature_extraction/image.py:172: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
-  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-    dtype=np.int):
-
-.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:34
-  /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection/.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:34: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
-  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-    method='lar', copy_X=True, eps=np.finfo(np.float).eps,
-
-.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:164
-  /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection/.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:164: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
-  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-    method='lar', copy_X=True, eps=np.finfo(np.float).eps,
-
-.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:281
-  /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection/.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:281: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
-  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-    eps=np.finfo(np.float).eps, copy_Gram=True, verbose=0,
-
-.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:865
-  /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection/.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:865: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
-  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-    eps=np.finfo(np.float).eps, copy_X=True, fit_path=True,
-
-.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1121
-  /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection/.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1121: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
-  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-    eps=np.finfo(np.float).eps, copy_X=True, fit_path=True,
-
-.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1149
-  /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection/.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1149: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
-  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-    eps=np.finfo(np.float).eps, positive=False):
-
-.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1379
-  /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection/.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1379: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
-  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-    max_n_alphas=1000, n_jobs=None, eps=np.finfo(np.float).eps,
-
-.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1621
-  /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection/.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1621: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
-  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-    max_n_alphas=1000, n_jobs=None, eps=np.finfo(np.float).eps,
-
-.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1755
-  /home/smrrazavian/Documents/Personal-Projects/child_abuse/child_abuse_detection/.venv_38/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1755: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
-  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-    eps=np.finfo(np.float).eps, copy_X=True, positive=False):
 
 -- Docs: https://docs.pytest.org/en/stable/warnings.html
 
@@ -68,9 +19,9 @@ Name                                           Stmts   Miss  Cover
 ------------------------------------------------------------------
 child_abuse_detection/__init__.py                  6      0   100%
 child_abuse_detection/text_classification.py       0      0   100%
-child_abuse_detection/text_utils.py               53     38    28%
-child_abuse_detection/vectorization.py            13     13     0%
+child_abuse_detection/text_utils.py               43      0   100%
+child_abuse_detection/vectorization.py            13      0   100%
 ------------------------------------------------------------------
-TOTAL                                             72     51    29%
+TOTAL                                             62      0   100%
 
-======================== 2 passed, 11 warnings in 2.70s ========================
+========================= 6 passed, 1 warning in 4.15s =========================

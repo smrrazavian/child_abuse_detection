@@ -1,5 +1,5 @@
 """stopword module for project."""
-from typing import Any, List
+# from typing import Any, List
 
 import os
 from html import unescape
@@ -7,7 +7,9 @@ from pathlib import Path
 
 import pandas as pd
 from bs4 import BeautifulSoup
-from hazm import SentenceTokenizer, WordTokenizer, stopwords_list
+
+# from hazm import SentenceTokenizer, WordTokenizer, stopwords_list
+from hazm import stopwords_list
 
 # TODO: fix inputs of functions.
 
@@ -21,12 +23,11 @@ def path_finder(filename: str) -> str:
         file_path (str):
             file's path.
     """
-    try:
+    if filename in ["ChildAbuse", "SampleNews"]:
         cwd = Path.cwd()
         file_path = os.path.join((cwd / "./assets/").resolve(), filename + ".csv")
         return file_path
-    except:
-        raise ValueError("Incorrect file name.")
+    raise ValueError("Incorrect file name.")
 
 
 def pars_csv(filename: str) -> pd.DataFrame:
@@ -86,21 +87,21 @@ def clean_text(df_data: pd.DataFrame) -> pd.DataFrame:
     return df_data
 
 
-def tokenize_text(texts: List[str], tokenize_type: str = "word") -> Any:
-    """Tokenize text based on tokenize_type(word or sentences).
-    Args:
-        texts (List[str]):
-            a List of sentences of the corpus.
-        tokenizeType (str):
-            Determines the tokenization type.
-    Returns:
-        tokenized_texts (Any):
-            tokenized form of sentences.
-    """
-    type_dict = {"word": WordTokenizer(), "sentence": SentenceTokenizer()}
-    tokenizer = type_dict[tokenize_type]
-    tokenized_texts = []
-    for text in texts:
-        tokenized_text = tokenizer.tokenize(text)
-        tokenized_texts.append(tokenized_text)
-    return tokenized_texts
+# def tokenize_text(texts: List[str], tokenize_type: str = "word") -> Any:
+#     """Tokenize text based on tokenize_type(word or sentences).
+#     Args:
+#         texts (List[str]):
+#             a List of sentences of the corpus.
+#         tokenizeType (str):
+#             Determines the tokenization type.
+#     Returns:
+#         tokenized_texts (Any):
+#             tokenized form of sentences.
+#     """
+#     type_dict = {"word": WordTokenizer(), "sentence": SentenceTokenizer()}
+#     tokenizer = type_dict[tokenize_type]
+#     tokenized_texts = []
+#     for text in texts:
+#         tokenized_text = tokenizer.tokenize(text)
+#         tokenized_texts.append(tokenized_text)
+#     return tokenized_texts

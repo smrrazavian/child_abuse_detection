@@ -4,10 +4,6 @@ from typing import Any
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 
-# TODO:
-#  Config countVectorizer & tfidfVectorizer. Complete word2vec.
-
-
 # def word2vec(text: List[str]) -> np.array:
 #     """Creates word2vec vector.
 #     Args:

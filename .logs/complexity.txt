@@ -1,13 +1,12 @@
-child_abuse_detection/vectorization.py
-    F 26:0 count_vectorizer - A (1)
-    F 41:0 tfidf_vectorizer - A (1)
 child_abuse_detection/text_utils.py
-    F 57:0 clean_text - A (4)
-    F 13:0 path_finder - A (2)
-    F 87:0 tokenize_text - A (2)
-    F 30:0 pars_csv - A (1)
+    F 60:0 clean_text - A (4)
+    F 17:0 path_finder - A (2)
+    F 33:0 pars_csv - A (1)
+child_abuse_detection/vectorization.py
+    F 23:0 count_vectorizer - A (1)
+    F 38:0 tfidf_vectorizer - A (1)
 child_abuse_detection/__init__.py
     F 7:0 get_version - A (2)
 
-7 blocks (classes, functions, methods) analyzed.
-Average complexity: A (1.8571428571428572)
+6 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.8333333333333333)
