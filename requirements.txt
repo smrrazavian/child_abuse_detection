@@ -146,7 +146,7 @@ kmodes==0.12.1
 libwapiti==0.2.1; platform_system != "Windows"
 lightgbm==3.3.2
 lime==0.2.0.1
-linkify-it-py==1.0.3
+linkify-it-py==2.0.0
 llvmlite==0.34.0; python_version >= "3.6"
 m2cgen==0.10.0; python_version >= "3.7"
 mako==1.2.1; python_version >= "3.7"
