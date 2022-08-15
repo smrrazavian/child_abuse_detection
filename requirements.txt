@@ -178,7 +178,7 @@ notebook==6.4.12; python_version >= "3.7"
 numba==0.51.2; python_version >= "3.6"
 numexpr==2.8.3; python_version >= "3.7"
 numpy==1.19.5
-numpy==1.23.1
+numpy==1.23.2
 oauthlib==3.2.0; python_version >= "3.7" and python_full_version < "3.0.0" or python_version >= "3.7" and python_full_version >= "3.4.0"
 optuna==2.10.1; python_version >= "3.6"
 orjson==3.7.8; python_version >= "3.7"
