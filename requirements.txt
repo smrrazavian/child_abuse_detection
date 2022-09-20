@@ -209,7 +209,7 @@ prettytable==3.3.0; python_version >= "3.7"
 prometheus-client==0.14.1; python_version >= "3.7"
 prometheus-flask-exporter==0.20.2; python_version >= "3.7"
 prompt-toolkit==3.0.30; python_version >= "3.8" and python_full_version >= "3.6.2"
-protobuf==4.21.3
+protobuf==4.21.6
 psutil==5.9.1
 ptyprocess==0.7.0; sys_platform != "win32" and python_version >= "3.8" and os_name != "nt"
 pure-eval==0.2.2; python_version >= "3.8"
