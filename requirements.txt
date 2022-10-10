@@ -187,7 +187,7 @@ packaging==21.3
 pandas-profiling==3.2.0; python_version >= "3.6"
 pandas==1.4.3; python_version >= "3.8"
 pandocfilters==1.5.0; python_version >= "3.7" and python_full_version < "3.0.0" or python_version >= "3.7" and python_full_version >= "3.4.0"
-panel==0.12.7; python_version >= "3.6"
+panel==0.14.0; python_version >= "3.6"
 param==1.12.2; python_version >= "3.6"
 paramiko==2.11.0; python_version >= "3.7"
 parso==0.8.3; python_version >= "3.8"
