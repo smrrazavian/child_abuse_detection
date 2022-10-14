@@ -175,7 +175,7 @@ nest-asyncio==1.5.5
 networkx==2.8.5
 nltk==3.3; python_version >= "3"
 notebook==6.4.12; python_version >= "3.7"
-numba==0.51.2; python_version >= "3.6"
+numba==0.56.3; python_version >= "3.6"
 numexpr==2.8.3; python_version >= "3.7"
 numpy==1.19.5
 numpy==1.23.1
