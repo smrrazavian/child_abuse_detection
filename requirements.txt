@@ -122,7 +122,7 @@ importlib-metadata==4.12.0; python_version < "3.9" and python_version >= "3.7"
 importlib-resources==5.9.0; python_version < "3.9" and python_version >= "3.7"
 iniconfig==1.1.1; python_version >= "3.6"
 interpret-core==0.2.7
-interpret==0.2.4
+interpret==0.3.0
 ipykernel==6.15.1
 ipython-genutils==0.2.0; python_version >= "3.7"
 ipython==8.4.0
