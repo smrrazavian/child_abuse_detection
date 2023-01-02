@@ -111,7 +111,7 @@ hazm==0.7.0
 holoviews==1.14.9; python_version >= "3.6"
 htmlmin==0.1.12; python_version >= "3.6"
 httpcore==0.13.2; python_version >= "3.7"
-httpx==0.18.1; python_version >= "3.7"
+httpx==0.23.2; python_version >= "3.7"
 hvplot==0.8.0; python_version >= "3.6"
 hyperopt==0.2.7
 idna==3.3
