@@ -279,7 +279,7 @@ sqlalchemy==1.4.39; python_version >= "3.7" and python_full_version < "3.0.0" or
 sqlparse==0.4.2; python_version >= "3.7"
 srsly==1.0.5; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0"
 stack-data==0.3.0; python_version >= "3.8"
-starlette==0.19.1; python_full_version >= "3.6.1" and python_version >= "3.6"
+starlette==0.25.0; python_full_version >= "3.6.1" and python_version >= "3.6"
 statsmodels==0.13.2; python_version >= "3.7"
 stevedore==4.0.0; python_version >= "3.8"
 tabulate==0.8.10
