@@ -290,7 +290,7 @@ terminado==0.15.0; python_version >= "3.7"
 textblob==0.17.1
 thinc==7.4.5; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0"
 threadpoolctl==3.1.0; python_version >= "3.6"
-tifffile==2022.5.4
+tifffile==2023.2.28
 tinycss2==1.1.1; python_version >= "3.7"
 toml==0.10.2; python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.3.0" and python_version >= "3.6"
 tomli==2.0.1; python_version >= "3.7"
